@@ -128,13 +128,13 @@ void check_winner(){
     {
         if(board[i][0]=='x'||board[i][0]=='X'&&board[i][1]=='x'||board[i][1]=='X'&&board[i][2]=='x'||board[i][2]=='X'){
         if(board[i][0] == board[i][1] && board[i][1] == board[i][2]) {
-        cout<<"YAYYYY you won the game !!Congrats!!"<<endl;
+        cout<<"YAYYYY, you won the game !!Congrats!!"<<endl;
         return ;
         }
         }
         if(board[0][i]=='x'||board[0][i]=='X'&&board[1][i]=='x'||board[1][i]=='X'&&board[2][i]=='x'||board[2][i]=='X'){
         if(board[0][i] == board[1][i] && board[1][i] == board[2][i]) {
-          cout<<"YAYYYY you won the game !!Congrats!!"<<endl;
+          cout<<"YAYYYY, you won the game !!Congrats!!"<<endl;
         return;
         }
         }
@@ -142,13 +142,13 @@ void check_winner(){
     }
 if(board[0][0]=='x'||board[0][0]=='X'&&board[1][1]=='x'||board[1][1]=='X'&&board[2][2]=='x'||board[2][2]=='X'){
     if(board[0][0] == board[1][1] && board[1][1] == board[2][2]) {
-      cout<<"YAYYYY you won the game !!Congrats!!"<<endl;
+      cout<<"YAYYYY, you won the game !!Congrats!!"<<endl;
     return ;
     }
 }
 if(board[0][2]=='x'||board[0][2]=='X'&&board[1][1]=='x'||board[1][1]=='X'&&board[2][0]=='x'||board[2][0]=='X'){
     if(board[0][2] == board[1][1] && board[1][1] == board[2][0]) {
-      cout<<"YAYYYY you won the game !!Congrats!!"<<endl;
+      cout<<"YAYYYY, you won the game !!Congrats!!"<<endl;
     return ;
     }
 }
@@ -235,7 +235,7 @@ char computer_Marker(){
        setComputerMarker(computerMarker);
   }
 
- // cout<<"computer marker test!!"<<computerMarker<<endl;
+ //cout<<"computer marker test!!"<<computerMarker<<endl;
 return computerMarker;
 }
 
@@ -259,6 +259,13 @@ void computerLowLevelMoves(){
     check_winner();
 
 }
+}
+
+void computerHighLevelMoves(){
+
+
+
+
 }
 
 };
@@ -306,7 +313,7 @@ player player;
 Board board;
 int option;
 printf("\033[1;32m");
-cout<<endl<<"``````HEllO and welcome to my Tic_Tac_Toi 2022 game``````"<<endl;
+cout<<endl<<"``````HEllO and welcome to my Tic_Tac_Toe 2022 game``````"<<endl;
 cout<<"~~~~~~~~~~~~So let's have some fun~~~~~~~~~~~"<<endl;
 cout<<"Please choose any option you want"<<endl;
 cout<<"1. Press 1 to challenge your friend as two players"<<endl;
